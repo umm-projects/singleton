@@ -1,16 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿namespace UnityModule {
 
-public class Singleton : MonoBehaviour {
+    public abstract class Singleton<T> where T : Singleton<T>, new() {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        /// <summary>
+        /// Singleton インスタンスの実体
+        /// </summary>
+        private static T instance;
+
+        /// <summary>
+        /// Singleton インスタンス
+        /// </summary>
+        public static T Instance {
+            get {
+                if (instance == default(T)) {
+                    instance = new T();
+                    instance.OnInitialize();
+                }
+                return instance;
+            }
+        }
+
+        /// <summary>
+        /// 初期化時のコールバック
+        /// </summary>
+        protected virtual void OnInitialize() {
+            // Do nothing.
+        }
+
+    }
+
 }
