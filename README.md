@@ -16,6 +16,7 @@ $ npm install github:umm-projects/singleton
 
 ```csharp
 using UnityEngine;
+using UnityModule;
 
 public class SampleSingleton : Singleton<SampleSingleton> {
 
