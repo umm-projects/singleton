@@ -2,9 +2,9 @@
   "name": "@umm/singleton",
   "version": "1.2.0",
   "description": "Provide Singleton accessor to any class.",
-  "homepage": "https://github.com/umm-projects/singleton",
+  "homepage": "https://github.com/umm/singleton",
   "bugs": {
-    "url": "https://github.com/umm-projects/singleton/issues"
+    "url": "https://github.com/umm/singleton/issues"
   },
   "scripts": {
     "umm:init": "umm-init",
@@ -22,14 +22,14 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:umm-projects/singleton"
+    "url": "git@github.com:umm/singleton"
   },
   "files": [
     "Assets",
     "scripts"
   ],
   "dependencies": {
-    "@umm/scripts": "umm-projects/scripts#^1.0.0"
+    "@umm/scripts": "umm/scripts#^1.0.0"
   },
   "devDependencies": {}
 }

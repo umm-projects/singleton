@@ -9,7 +9,7 @@
 # Install
 
 ```shell
-$ npm install github:umm-projects/singleton
+$ npm install github:umm/singleton
 ```
 
 # Usage
