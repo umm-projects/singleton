@@ -1,6 +1,6 @@
 {
   "name": "@umm/singleton",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Provide Singleton accessor to any class.",
   "homepage": "https://github.com/umm/singleton",
   "bugs": {
